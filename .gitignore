@@ -57,3 +57,6 @@ fastlane/screenshots_dark/screenshots.html
 fastlane/test_output
 
 fastlane/metadata
+
+macOS
+.DS_Store
