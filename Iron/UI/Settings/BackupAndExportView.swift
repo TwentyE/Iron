@@ -60,7 +60,7 @@ struct BackupAndExportView: View {
                         
                         let formatter = DateFormatter()
                         formatter.dateFormat = "yyyy-MM-dd"
-                        let url = try self.tempFile(data: data, name: "\(formatter.string(from: Date())).ironbackup")
+                        let url = try self.tempFile(data: data, name: "\(formatter.string(from: Date()))Ironbackup")
                         
                         self.shareFile(url: url)
                     } catch {

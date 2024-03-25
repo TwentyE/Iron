@@ -52,7 +52,7 @@ class BackupFileStore: ObservableObject {
                             os_log("Could not download iCloud file %@:", log: .backup, type: .fault, backupUrl.path, error.localizedDescription)
                         }
                     }
-                    guard uti == "com.kabouzeid.ironbackup" else { return nil }
+                    guard uti == "com.twenty.ironbackup" else { return nil }
                     guard let creationDate = resourceValues.creationDate else { return nil }
                     guard let totalFileSize = resourceValues.totalFileSize else { return nil }
                     return BackupFile(url: backupUrl, creationDate: creationDate, fileSize: totalFileSize, deviceName: deviceName)
